@@ -6,16 +6,16 @@
 
 COUNTER=0
 
-while [ "$COUNTER" -le 10 ]
+while [ $COUNTER -lt 10 ]
 do
-    if [ $COUNTER -eq 3 ]
-    then
-	echo "bad luck"
-    elif [ $COUNTER -eq 7 ]
-    then
-	echo "good luck"
-    else
-	echo "Best School"
-    fi
-    (( COUNTER++ ))
+  if [ $COUNTER -eq 3 ]
+  then
+    echo "bad luck"
+  elif [ $COUNTER -eq 7 ]
+  then
+    echo "good luck"
+  else
+    echo "Holberton School"
+  fi
+  (( COUNTER++ ))
 done
